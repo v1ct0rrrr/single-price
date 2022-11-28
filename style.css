@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13rem 16rem;
+    grid-template-areas: "h h"
+                         "m a";
+    margin: 7rem auto;
+    width: 600px;
+}
+
+/* ========= HEADER ========= */
+
+header
+{
+    grid-area: h;
+    background-color: white;
+    width: 100%;
+    border-radius: 0.45rem 0.45rem 0 0;
+}
+
+.content
+{
+    display: grid;
+    width: 550px;
+    margin: 25px auto;
+}
+
+.content h1
+{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+
+.content p
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+}
+
+.content span
+{
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.02rem;
+    color: hsl(218, 22%, 67%);
+}
+
+/* ========= MAIN ========= */
+
+main
+{
+    grid-area: m;
+    background-color: hsl(179, 62%, 43%);
+    width: 100%;
+    border-radius: 0 0 0 0.45rem;
+}
+
+.subs
+{
+    margin: 30px 30px;
+}
+
+.subs h2
+{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.subs p
+{
+    font-size: 18px;
+    font-weight: 200;
+    color: hsl(204, 43%, 93%);
+}
+
+.subs b
+{
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.subs span
+{
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 10px;
+}
+
+.subs button
+{
+    margin-top: 30px;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 222px;
+    height: 45px;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* ========= ASIDE ========= */
+
+aside
+{
+    grid-area: a;
+    background-color: #4abebd;
+    width: 100%;
+    border-radius: 0 0 0.45rem 0;
+}
+
+.about
+{
+    margin: 30px 30px;
+}
+
+.about h4
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(204, 43%, 93%);
+}
+
+.about p
+{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+    color: hsl(204, 43%, 93%);
+}
